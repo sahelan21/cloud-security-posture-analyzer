@@ -2,7 +2,7 @@
 
 A lightweight open-source cloud security monitoring tool built for Indian Small and Medium Enterprises (SMEs). Analyzes cloud activity logs, detects suspicious behavior using machine learning, and presents findings through automated reports and visualizations.
 
-> BCA Final Year Capstone Project, Amity University Online, Cloud and Security Elective (TCS-aligned curriculum)
+> BCA Final Year Major Project, Amity University Online, Cloud and Security Elective (TCS-aligned curriculum)
 
 ---
 
