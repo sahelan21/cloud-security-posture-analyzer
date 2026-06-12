@@ -1,0 +1,463 @@
+==================================================
+CLOUD SECURITY POSTURE ANALYZER
+Automated Threat Detection Report
+Generated: 2026-06-13 03:22:39.657524
+==================================================
+
+--- EXECUTIVE SUMMARY ---
+Total Logs Analyzed: 500
+Total Anomalies Detected: 40 (8.0 percent)
+High Severity: 0
+Medium Severity: 12
+Low Severity: 28
+Most At-Risk User: USER003
+Peak Suspicious Hour: 1
+Foreign Location Incidents: 8
+--------------------------------------------------
+
+[INCIDENT #001] [MEDIUM]
+Timestamp   : 2026-05-21 01:27:37
+User        : USER003
+Action      : getobject
+Resource    : S3_bucket_prod
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 1387.02 MB
+Risk Score  : -0.1335
+Recommended : MONITOR CLOSELY. Verify with user directly. after-hours login detected, unusually large data transfer. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #002] [MEDIUM]
+Timestamp   : 2026-04-21 00:28:33
+User        : USER003
+Action      : getobject
+Resource    : IAM_role_admin
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 22.3 MB
+Risk Score  : -0.1153
+Recommended : MONITOR CLOSELY. Verify with user directly. after-hours login detected, failed authentication attempt. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #003] [MEDIUM]
+Timestamp   : 2026-04-02 12:52:10
+User        : USER003
+Action      : describeinstances
+Resource    : Lambda_function_01
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 1820.1 MB
+Risk Score  : -0.1016
+Recommended : MONITOR CLOSELY. Verify with user directly. unusually large data transfer. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #004] [MEDIUM]
+Timestamp   : 2026-04-15 19:21:13
+User        : USER003
+Action      : deleteobject
+Resource    : Lambda_function_01
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 1256.68 MB
+Risk Score  : -0.0868
+Recommended : MONITOR CLOSELY. Verify with user directly. unusually large data transfer. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #005] [MEDIUM]
+Timestamp   : 2026-03-22 09:34:55
+User        : USER003
+Action      : getobject
+Resource    : IAM_role_admin
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 1.88 MB
+Risk Score  : -0.0704
+Recommended : MONITOR CLOSELY. Verify with user directly. failed authentication attempt. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #006] [MEDIUM]
+Timestamp   : 2026-03-29 23:21:33
+User        : USER005
+Action      : loginattempt
+Resource    : EC2_instance_01
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 30.29 MB
+Risk Score  : -0.0576
+Recommended : MONITOR CLOSELY. Verify with user directly. after-hours login detected. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #007] [MEDIUM]
+Timestamp   : 2026-04-07 23:03:12
+User        : USER010
+Action      : listbuckets
+Resource    : S3_bucket_prod
+Location    : lucknow
+IP Address  : 111.47.134.154
+Data Volume : 4.51 MB
+Risk Score  : -0.0574
+Recommended : MONITOR CLOSELY. Verify with user directly. after-hours login detected, failed authentication attempt. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #008] [MEDIUM]
+Timestamp   : 2026-03-20 04:31:57
+User        : USER005
+Action      : describeinstances
+Resource    : RDS_database
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 43.59 MB
+Risk Score  : -0.0562
+Recommended : MONITOR CLOSELY. Verify with user directly. after-hours login detected, failed authentication attempt. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #009] [MEDIUM]
+Timestamp   : 2026-04-07 05:33:09
+User        : USER005
+Action      : deleteobject
+Resource    : RDS_database
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 46.21 MB
+Risk Score  : -0.0557
+Recommended : MONITOR CLOSELY. Verify with user directly. after-hours login detected, failed authentication attempt. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #010] [MEDIUM]
+Timestamp   : 2026-03-28 00:24:51
+User        : USER003
+Action      : getobject
+Resource    : S3_bucket_prod
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 24.99 MB
+Risk Score  : -0.0549
+Recommended : MONITOR CLOSELY. Verify with user directly. after-hours login detected. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #011] [MEDIUM]
+Timestamp   : 2026-04-17 20:32:47
+User        : USER003
+Action      : listbuckets
+Resource    : Lambda_function_01
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 8.11 MB
+Risk Score  : -0.0532
+Recommended : MONITOR CLOSELY. Verify with user directly. failed authentication attempt. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #012] [MEDIUM]
+Timestamp   : 2026-05-16 23:59:39
+User        : USER010
+Action      : putobject
+Resource    : Lambda_function_01
+Location    : lucknow
+IP Address  : 111.47.134.154
+Data Volume : 43.88 MB
+Risk Score  : -0.0526
+Recommended : MONITOR CLOSELY. Verify with user directly. after-hours login detected, failed authentication attempt. Review in 24 hours.
+--------------------------------------------------
+[INCIDENT #013] [LOW]
+Timestamp   : 2026-04-09 18:18:28
+User        : USER009
+Action      : createinstance
+Resource    : RDS_database
+Location    : russia
+IP Address  : 185.220.45.194
+Data Volume : 14.28 MB
+Risk Score  : -0.0480
+Recommended : LOG AND REVIEW. Flag for weekly audit. foreign location detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #014] [LOW]
+Timestamp   : 2026-05-31 10:43:44
+User        : USER009
+Action      : putobject
+Resource    : IAM_role_admin
+Location    : china
+IP Address  : 1.180.59.78
+Data Volume : 42.86 MB
+Risk Score  : -0.0472
+Recommended : LOG AND REVIEW. Flag for weekly audit. foreign location detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #015] [LOW]
+Timestamp   : 2026-04-01 14:38:44
+User        : USER009
+Action      : terminateinstance
+Resource    : IAM_role_admin
+Location    : china
+IP Address  : 1.180.254.36
+Data Volume : 21.18 MB
+Risk Score  : -0.0447
+Recommended : LOG AND REVIEW. Flag for weekly audit. foreign location detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #016] [LOW]
+Timestamp   : 2026-04-06 04:48:37
+User        : USER003
+Action      : loginattempt
+Resource    : S3_bucket_prod
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 26.31 MB
+Risk Score  : -0.0445
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #017] [LOW]
+Timestamp   : 2026-04-11 09:28:22
+User        : USER003
+Action      : listbuckets
+Resource    : EC2_instance_01
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 3.82 MB
+Risk Score  : -0.0426
+Recommended : LOG AND REVIEW. Flag for weekly audit. failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #018] [LOW]
+Timestamp   : 2026-04-22 13:15:22
+User        : USER009
+Action      : getobject
+Resource    : RDS_database
+Location    : china
+IP Address  : 1.180.226.114
+Data Volume : 18.24 MB
+Risk Score  : -0.0419
+Recommended : LOG AND REVIEW. Flag for weekly audit. foreign location detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #019] [LOW]
+Timestamp   : 2026-05-02 01:57:05
+User        : USER003
+Action      : createinstance
+Resource    : RDS_database
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 9.02 MB
+Risk Score  : -0.0416
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #020] [LOW]
+Timestamp   : 2026-04-30 08:29:30
+User        : USER009
+Action      : putobject
+Resource    : RDS_database
+Location    : russia
+IP Address  : 185.220.4.123
+Data Volume : 4.27 MB
+Risk Score  : -0.0405
+Recommended : LOG AND REVIEW. Flag for weekly audit. foreign location detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #021] [LOW]
+Timestamp   : 2026-04-20 15:43:11
+User        : USER009
+Action      : loginattempt
+Resource    : IAM_role_admin
+Location    : russia
+IP Address  : 185.220.57.78
+Data Volume : 31.61 MB
+Risk Score  : -0.0349
+Recommended : LOG AND REVIEW. Flag for weekly audit. foreign location detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #022] [LOW]
+Timestamp   : 2026-05-09 08:01:04
+User        : USER009
+Action      : deleteobject
+Resource    : RDS_database
+Location    : russia
+IP Address  : 185.220.144.213
+Data Volume : 34.09 MB
+Risk Score  : -0.0326
+Recommended : LOG AND REVIEW. Flag for weekly audit. foreign location detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #023] [LOW]
+Timestamp   : 2026-03-31 14:12:42
+User        : USER009
+Action      : getobject
+Resource    : IAM_role_admin
+Location    : china
+IP Address  : 1.180.71.82
+Data Volume : 34.07 MB
+Risk Score  : -0.0323
+Recommended : LOG AND REVIEW. Flag for weekly audit. foreign location detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #024] [LOW]
+Timestamp   : 2026-05-19 01:05:47
+User        : USER007
+Action      : listbuckets
+Resource    : EC2_instance_01
+Location    : kolkata
+IP Address  : 136.60.38.110
+Data Volume : 16.21 MB
+Risk Score  : -0.0318
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected, failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #025] [LOW]
+Timestamp   : 2026-05-17 01:53:58
+User        : USER005
+Action      : listbuckets
+Resource    : IAM_role_admin
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 49.35 MB
+Risk Score  : -0.0309
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #026] [LOW]
+Timestamp   : 2026-03-23 04:11:24
+User        : USER007
+Action      : getobject
+Resource    : RDS_database
+Location    : kolkata
+IP Address  : 136.60.38.110
+Data Volume : 40.01 MB
+Risk Score  : -0.0303
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected, failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #027] [LOW]
+Timestamp   : 2026-05-27 05:01:02
+User        : USER006
+Action      : terminateinstance
+Resource    : IAM_role_admin
+Location    : pune
+IP Address  : 156.14.114.211
+Data Volume : 46.94 MB
+Risk Score  : -0.0275
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected, failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #028] [LOW]
+Timestamp   : 2026-03-20 05:30:17
+User        : USER009
+Action      : loginattempt
+Resource    : EC2_instance_01
+Location    : jaipur
+IP Address  : 158.46.35.138
+Data Volume : 6.82 MB
+Risk Score  : -0.0223
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected, failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #029] [LOW]
+Timestamp   : 2026-06-03 03:57:15
+User        : USER009
+Action      : getobject
+Resource    : S3_bucket_prod
+Location    : jaipur
+IP Address  : 158.46.35.138
+Data Volume : 43.09 MB
+Risk Score  : -0.0197
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected, failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #030] [LOW]
+Timestamp   : 2026-05-08 12:12:52
+User        : USER003
+Action      : putobject
+Resource    : IAM_role_admin
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 19.81 MB
+Risk Score  : -0.0178
+Recommended : LOG AND REVIEW. Flag for weekly audit. failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #031] [LOW]
+Timestamp   : 2026-06-03 17:17:15
+User        : USER003
+Action      : deleteobject
+Resource    : RDS_database
+Location    : bangalore
+IP Address  : 41.115.111.9
+Data Volume : 30.57 MB
+Risk Score  : -0.0176
+Recommended : LOG AND REVIEW. Flag for weekly audit. failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #032] [LOW]
+Timestamp   : 2026-03-26 00:22:04
+User        : USER005
+Action      : terminateinstance
+Resource    : S3_bucket_prod
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 7.49 MB
+Risk Score  : -0.0138
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #033] [LOW]
+Timestamp   : 2026-04-20 08:13:33
+User        : USER005
+Action      : getobject
+Resource    : Lambda_function_01
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 31.22 MB
+Risk Score  : -0.0132
+Recommended : LOG AND REVIEW. Flag for weekly audit. failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #034] [LOW]
+Timestamp   : 2026-05-24 23:31:33
+User        : USER010
+Action      : describeinstances
+Resource    : S3_bucket_prod
+Location    : lucknow
+IP Address  : 111.47.134.154
+Data Volume : 29.62 MB
+Risk Score  : -0.0100
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #035] [LOW]
+Timestamp   : 2026-04-27 15:32:00
+User        : USER005
+Action      : putobject
+Resource    : IAM_role_admin
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 15.47 MB
+Risk Score  : -0.0087
+Recommended : LOG AND REVIEW. Flag for weekly audit. failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #036] [LOW]
+Timestamp   : 2026-04-06 18:11:25
+User        : USER005
+Action      : listbuckets
+Resource    : RDS_database
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 26.12 MB
+Risk Score  : -0.0082
+Recommended : LOG AND REVIEW. Flag for weekly audit. failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #037] [LOW]
+Timestamp   : 2026-04-16 03:27:57
+User        : USER010
+Action      : putobject
+Resource    : IAM_role_admin
+Location    : lucknow
+IP Address  : 111.47.134.154
+Data Volume : 21.6 MB
+Risk Score  : -0.0073
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected, failed authentication attempt. No immediate action.
+--------------------------------------------------
+[INCIDENT #038] [LOW]
+Timestamp   : 2026-05-22 01:27:14
+User        : USER005
+Action      : putobject
+Resource    : EC2_instance_01
+Location    : hyderabad
+IP Address  : 223.113.194.106
+Data Volume : 40.7 MB
+Risk Score  : -0.0045
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #039] [LOW]
+Timestamp   : 2026-03-21 23:13:19
+User        : USER008
+Action      : loginattempt
+Resource    : RDS_database
+Location    : ahmedabad
+IP Address  : 211.228.78.163
+Data Volume : 12.62 MB
+Risk Score  : -0.0025
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected. No immediate action.
+--------------------------------------------------
+[INCIDENT #040] [LOW]
+Timestamp   : 2026-05-30 22:52:32
+User        : USER009
+Action      : listbuckets
+Resource    : EC2_instance_01
+Location    : jaipur
+IP Address  : 158.46.35.138
+Data Volume : 38.24 MB
+Risk Score  : -0.0000
+Recommended : LOG AND REVIEW. Flag for weekly audit. after-hours login detected. No immediate action.
+--------------------------------------------------
+
+==================================================
+END OF REPORT
+Cloud Security Posture Analyzer v1.0
+Built for Indian SMEs as an open source security monitoring solution
+==================================================
